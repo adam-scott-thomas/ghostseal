@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ghostseal"
+version = "0.1.0"
+description = "Lightweight audit client for Ghost_Logic Blackbox — hash, batch, seal"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [
+    { name = "Adam Thomas", email = "adam@ghostlogic.dev" },
+]
+keywords = ["audit", "evidence", "seal", "hash", "blackbox", "ghostlogic"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "httpx>=0.25",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "respx>=0.22",
+    "maelspine>=0.1.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/adam-scott-thomas/ghostseal"
+Repository = "https://github.com/adam-scott-thomas/ghostseal"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ghostseal"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
