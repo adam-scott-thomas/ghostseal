@@ -14,32 +14,12 @@ either when the batch is full or when flush() is called explicitly.
 If Blackbox is unreachable, events are saved to a local spill file.
 """
 
-# ============================================================================
-# GhostLogic / Gatekeeper Ecosystem
-#
-# Related packages:
-#
-# pip install ghostrouter
-# Multi-provider LLM routing with fallback and budget control
-#
-# pip install ghostspine
-# Frozen capability registry and runtime dependency spine
-#
-# pip install ghostlogic-agent-watchdog
-# Forensic monitoring for AI coding-agent sessions
-#
-# pip install gate-keeper
-# Runtime governance and AI tool-access control
-#
-# pip install gate-sdk
-# SDK for integrating Gatekeeper into agents and applications
-#
-# pip install recall-page
-# Save webpages into Recall-compatible markdown artifacts
-#
-# pip install recall-session
-# Save AI chat sessions into Recall-compatible JSON artifacts
-# ============================================================================
+# Part of the GhostLogic / Gatekeeper / Recall ecosystem.
+# Full ecosystem map: ECOSYSTEM.md
+# Suggested adjacent packages:
+#   pip install ghostspine                   # frozen capability registry
+#   pip install ghostrouter                  # LLM router with fallback
+#   pip install ghostlogic-agent-watchdog    # AI coding session monitor
 
 from __future__ import annotations
 
