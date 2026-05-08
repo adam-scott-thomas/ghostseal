@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ghostseal"
-version = "0.1.0"
+version = "0.1.1"
 description = "Lightweight audit client for Ghost_Logic Blackbox — hash, batch, seal"
 readme = "README.md"
 license = "Apache-2.0"
